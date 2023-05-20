@@ -1,0 +1,41 @@
+# It would be great if Prettier could, by default, ignore the files listed in
+# the .gitignore file. This feature has been discussed in several issues and
+# pull requests on GitHub. The most relevant one seems to be
+# https://github.com/prettier/prettier/issues/8506. However, it still seems
+# necessary to duplicate the file list in the .prettierignore file at the
+# moment.
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Local env files
+.env*.local
+
+# Dependencies
+pnpm-lock.yaml
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+.DS_Store
+*.pem
